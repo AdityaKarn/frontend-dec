@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/tasks-styles.css" />
+    <title><%= task_number %></title>
+  </head>
+
+
+  <body>
+    <div class="container full-height-grow">
+      <header class="main-header">
+        <a href="../index.html" class="brand-logo">
+          <img src="/assets/Ecell-LOGO-01.png" />
+          <div class="brand-logo-name">DEC</div>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="./index.ejs">Home</a></li>
+            <li><a href="./tasks.ejs">Tasks</a></li>
+            <li><a href="./login.ejs">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="tasks-main-section">
+        <div class="task-count">
+          <h1 class="task-number">
+            Task <span class="accent-text-stroke"><%= task_number %></span>
+          </h1>
+          <p><%= subtext %></p>
+          <br />
+        </div>
+        <div class="task-deadline-container">
+          <h3 class="task-deadline">Deadline: something</h3>
+        </div>
+        <div class="points-container">
+          <h3 class="task-points">Points : something</h3>
+        </div>
+        <div class="task-title-container">
+          <h2 class="task-title coves-font">
+            Entrepreneurship Facilities By Government
+          </h2>
+        </div>
+        <div class="task-details">
+          <h3 class="description-title coves-font">Description</h3>
+          <h4 class="task-description-text coves-font task-info">
+            <%= description %>
+          </h4>
+          <h3 class="description-title coves-font">Guidelines</h3>
+
+          <div class="button-container">
+            <button type="submit" class="submit-button">Submit Files</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1><%= task_number %></h1>
+    <p><%= subtext %></p>
+    <br />
+    <h3>Description :</h3>
+    <p><%= description %></p>
+    <br />
+    <h3>Guidelines :</h3>
+    <p><%= guidelines %></p>
+    <br />
+    <h3>Submission Criteria:</h3>
+    <p><%= submission %></p>
+  </body>
+</html>
